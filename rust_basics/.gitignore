@@ -1,0 +1,28 @@
+# Diretório de build do Cargo
+# Contém todos os binários, bibliotecas e arquivos intermediários
+/target/
+
+# Dependências temporárias baixadas pelo Cargo
+# (Principalmente usado por Cargo.lock e Cargo.toml)
+/Cargo.lock
+
+# Logs de teste de cobertura e performance (se usados)
+# Ferramentas como cargo-tarpaulin ou cargo-bench usam estes
+/cobertura/
+/perfil/
+/temp-*
+
+# Arquivos gerados pelo sistema operacional ou IDEs
+# (Isso é opcional, mas útil para manter o repositório limpo)
+.DS_Store # macOS
+.vscode/ # Arquivos de configuração do VS Code (opcional)
+.idea/   # Arquivos de configuração do IntelliJ IDEA/CLion (opcional)
+
+# Arquivos de editor de texto temporários
+*~
+#*#
+
+# Se você estiver fazendo um microserviço ou usando Docker
+# .env e arquivos de ambiente/segredos
+.env
+.env.*
